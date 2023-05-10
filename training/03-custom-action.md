@@ -28,9 +28,11 @@ async function createRepository(repoOwner, repoName, repoVisibility) {
         core.setOutput("repo_full_name", data.full_name);
         core.setOutput("repo_url", data.html_url);
         core.setOutput("repo_id", data.id);
+        core.setOutput("status", "success");
     }
     ).catch((error) => {
         core.setFailed(error.response.data.message);
+        core.setOutput("status", "failure");
     }
     );
 }
