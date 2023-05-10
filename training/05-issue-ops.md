@@ -55,7 +55,7 @@ replaced by:
         uses: ndupoiron-ops/action-create-repo@v1.0.0
         id: create_repository
         with:
-          repo_owner: context.repo.owner
+          repo_owner: ${{ github.repository_owner }}
           repo_name: ${{ needs.extract_repository_settings.outputs.repository_name }}
           repo_visibility: ${{ needs.extract_repository_settings.outputs.repository_visibility }}
           token: ${{ secrets.REPO_OPS_TOKEN }}
