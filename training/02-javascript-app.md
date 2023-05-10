@@ -69,7 +69,8 @@ export REPO_OWNER=ndupoiron-ops
 export REPO_NAME=repo01
 export REPO_VISIBILITY=private
 
-node index.js 
+node index.js
+
 repo_full_name ndupoiron-ops/repo01
 repo_url https://github.com/ndupoiron-ops/repo01
 repo_id 638974808
@@ -143,5 +144,19 @@ javascript modules 323 KiB
   + 11 modules
 ./node_modules/tr46/lib/mappingTable.json 254 KiB [built] [code generated]
 webpack 5.82.0 compiled successfully in 3371 ms
-	action.js is created and minimized in dist folder.
 ```
+
+action.js is created and minimized in dist folder.
+
+* Test package
+
+```shell
+export INPUT_REPO_OWNER=ndupoiron-ops
+export INPUT_REPO_NAME=repo02
+export INPUT_REPO_VISIBILITY=public
+
+node dist/action.js
+
+repo_full_name ndupoiron-ops/repo03
+repo_url https://github.com/ndupoiron-ops/repo03
+repo_id 638980724
