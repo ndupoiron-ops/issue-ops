@@ -18,3 +18,6 @@ The documentation is [here](https://docs.github.com/en/actions/creating-actions/
 ## Use Case
 The objective is to build a IssueOps process to let developers create repositories from requests hosted in issues. This allows the DevSecOps teams to keep control on repository creation and policies enforcement.
 
+## Start the training
+
+Follow the guide starting with [Section 1 - Preparation](https://github.com/tdupoiron-org/issue-ops/blob/main/training/01-preparation.md)
