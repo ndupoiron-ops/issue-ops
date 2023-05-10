@@ -17,7 +17,6 @@ body:
       description: The visibility of the newly created repository,
       options:
         - public
-        - internal
         - private
     validations:
       required: true
