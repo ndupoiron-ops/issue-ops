@@ -67,4 +67,4 @@ replaced by:
 
 The repository should be created and the issue commented and closed
 
-### [Next section: 06 - Security and Policies](https://github.com/tdupoiron-org/issue-ops/edit/main/training/06-policies.md)
+### [Next section: 06 - Security and Policies](https://github.com/tdupoiron-org/issue-ops/blob/main/training/06-policies.md)
