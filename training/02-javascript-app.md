@@ -157,6 +157,6 @@ export INPUT_REPO_VISIBILITY=public
 
 node dist/action.js
 
-repo_full_name ndupoiron-ops/repo03
-repo_url https://github.com/ndupoiron-ops/repo03
+repo_full_name ndupoiron-ops/repo02
+repo_url https://github.com/ndupoiron-ops/repo02
 repo_id 638980724
