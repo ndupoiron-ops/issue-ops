@@ -29,7 +29,13 @@ It simply requires a free account on GitHub.com.
  
 * Open the repository, click on the Actions tab and enable the workflows
  
+ <img width="481" alt="image" src="https://github.com/ndupoiron-ops/issue-ops/assets/123163496/4cafc352-cb66-409a-bf9c-0f7d1d0b1a87">
+
 * Create a new issue from template. Choose a repository name
+
+ Don't forget to create the repo-ops label
  
+ <img width="346" alt="image" src="https://github.com/ndupoiron-ops/issue-ops/assets/123163496/af63f298-7bdd-4e37-baf6-221bdea78dfe">
+
 The workflow is triggered and the repository should be created. 
 At the same time the issue is commented and closed.
