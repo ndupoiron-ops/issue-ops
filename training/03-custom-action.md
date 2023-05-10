@@ -73,7 +73,7 @@ npm run build
 * Creation an action.yml file at the root directory
 
 ```yaml
-name: 'ndupoiron - Create a repository'
+name: 'dupoiron - Create a repository'
 description: 'Create a repository'
 
 branding:
@@ -129,7 +129,7 @@ You can see that it is now possible to publish the action to the marketplace
 * Rename the file `create-repo-test-local.yml` and paste the following content
 
 ```yaml
-name: Create Repository Test Workflow
+name: Create Repository Test Workflow Local
 
 on:
   workflow_dispatch:
