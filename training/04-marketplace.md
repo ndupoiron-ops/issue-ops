@@ -2,16 +2,28 @@
 
 ## 1. Publish release
 
+* Click on Draft a release
+
+<img width="208" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/f7ffaefd-7356-4037-9018-5cbeea662875">
+
+* Verify all requirements
+
+<img width="956" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/8807f141-97b6-401f-ac7e-e2cd0a06869f">
+
 * Create tag v1.0.0 and publish release
 
+<img width="469" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/ce83a0cf-d242-48cf-926c-cd0ad11ff162">
+
 You can find now your action on the Marketplace
+
+<img width="1034" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/e86b0dbb-0500-474f-98df-c36f291ba224">
 
 ## 2. Test action from Marketplace
 
 * Create a new workflow file create-repo-test-marketplace.yml in the .github/workflows directory
 
 ```yaml
-name: Create Repository Test Workflow
+name: Create Repository Test Workflow Marketplace
 
 on:
   workflow_dispatch:
@@ -37,8 +49,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ndupoiron - Create a repository
-        uses: ndupoiron-ops/action-create-repo@v1.0.0
+      - name: dupoiron - Create a repository
+        uses: dupoiron-ops/action-create-repo@v1.0.0
         with:
           repo_owner: ${{ github.event.inputs.repo_owner }}
           repo_name: ${{ github.event.inputs.repo_name }}
