@@ -1,19 +1,29 @@
 # Javascript application
 
+In this chapter we create a simple Javascript app to invoke GitHub Javascript SDK to create a repository.
+
 ## 1. Initialize project
 
-* Create the `action-create-repo` public repository in the organization
+* Create the `action-create-repo` public repository in the same organization
+
+<img width="537" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/e22f1510-ae8d-4363-8d1a-98db8f654c6f">
 
 * Start a Codespace on this repository
 
+<img width="424" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/1444f3dd-c0d4-4804-b008-6edec827f3ee">
+
 You can see that the secret is available in the codespace
+
+```shell
+echo $REPO_OPS_TOKEN
+```
 
 * Open a terminal and initialize a new nodeJS project:
 
 ```shell
 npm init
 
-package name: (boostrap) repo-ops
+package name: (action-create-repo) 
 version: (1.0.0) 
 description: Create repository from issue
 ```
@@ -23,6 +33,8 @@ description: Create repository from issue
 ```
 node_modules
 ```
+
+<img width="300" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/1e0d0746-5748-4089-bb74-d3cc1b0711fc">
 
 ## 2. Design a script to create a repository
 
@@ -65,18 +77,20 @@ createRepository(repoOwner, repoName, repoVisibility);
 
 ```shell
 npm install @octokit/rest
-export REPO_OWNER=ndupoiron-ops
+export REPO_OWNER=dupoiron-ops
 export REPO_NAME=repo01
 export REPO_VISIBILITY=private
 
 node index.js
 
-repo_full_name ndupoiron-ops/repo01
-repo_url https://github.com/ndupoiron-ops/repo01
-repo_id 638974808
+repo_full_name dupoiron-ops/repo01
+repo_url https://github.com/dupoiron-ops/repo01
+repo_id 639064493
 ```
 
 A repository `repo01` is created in your organization
+
+<img width="343" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/17a6cceb-d07c-4fd4-9b60-8b0cff1fb41d">
 
 ## 3. Build app using webpack
 
@@ -125,25 +139,25 @@ module.exports = {
 ```shell
 npm run build
 
-> repo-ops@1.0.0 build
+> action-create-repo@1.0.0 build
 > webpack --config webpack.config.js
 
-asset action.js 415 KiB [emitted] [minimized] (name: main) 1 related asset
-orphan modules 188 KiB [orphan] 31 modules
+asset action.js 382 KiB [emitted] [minimized] (name: main) 1 related asset
+orphan modules 179 KiB [orphan] 18 modules
 runtime modules 937 bytes 4 modules
-javascript modules 323 KiB
-  modules by path ./ 323 KiB
-    cacheable modules 134 KiB
-      modules by path ./node_modules/@actions/ 65.9 KiB 10 modules
-      modules by path ./node_modules/whatwg-url/lib/*.js 41.8 KiB 5 modules
-      modules by path ./node_modules/before-after-hook/ 3.68 KiB 4 modules
-      modules by path ./node_modules/tunnel/ 7.49 KiB 2 modules
-      + 5 modules
-    ./node_modules/@octokit/rest/dist-web/index.js + 16 modules 179 KiB [not cacheable] [built] [code generated]
-    ./node_modules/uuid/dist/esm-node/index.js + 15 modules 9.86 KiB [not cacheable] [built] [code generated]
-  + 11 modules
-./node_modules/tr46/lib/mappingTable.json 254 KiB [built] [code generated]
-webpack 5.82.0 compiled successfully in 3371 ms
+built modules 493 KiB [built]
+  cacheable modules 314 KiB
+    modules by path ./node_modules/whatwg-url/lib/*.js 41.8 KiB 5 modules
+    modules by path ./node_modules/before-after-hook/ 3.68 KiB
+      ./node_modules/before-after-hook/index.js 1.71 KiB [built] [code generated]
+      + 3 modules
+    modules by path ./node_modules/tr46/ 261 KiB
+      ./node_modules/tr46/index.js 7.39 KiB [built] [code generated]
+      ./node_modules/tr46/lib/mappingTable.json 254 KiB [built] [code generated]
+    + 4 modules
+  ./node_modules/@octokit/rest/dist-web/index.js + 18 modules 179 KiB [not cacheable] [built] [code generated]
+  external "punycode" 42 bytes [built] [code generated]
+webpack 5.82.1 compiled successfully in 2584 ms
 ```
 
 action.js is created and minimized in dist folder.
@@ -151,12 +165,16 @@ action.js is created and minimized in dist folder.
 * Test package
 
 ```shell
-export INPUT_REPO_OWNER=ndupoiron-ops
-export INPUT_REPO_NAME=repo02
-export INPUT_REPO_VISIBILITY=public
+export REPO_OWNER=dupoiron-ops
+export REPO_NAME=repo02
+export REPO_VISIBILITY=public
 
 node dist/action.js
 
-repo_full_name ndupoiron-ops/repo02
-repo_url https://github.com/ndupoiron-ops/repo02
-repo_id 638980724
+repo_full_name dupoiron-ops/repo02
+repo_url https://github.com/dupoiron-ops/repo02
+repo_id 639065654
+
+Once again, the repository is created successfully
+
+<img width="328" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/8d2d5257-88ed-4bb6-9f5b-cda769f2e12f">
