@@ -68,7 +68,7 @@ node index.js
 npm run build
 ```
 
-2. Creation Action definition
+## 2. Creation Action definition
 
 * Creation an action.yml file at the root directory
 
@@ -118,7 +118,7 @@ You can see that it is now possible to publish the action to the marketplace
 
 <img width="920" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/f6ecafaf-b965-49c1-a11d-44056ad88c2f">
 
-3. Test the local action in a simple workflow
+## 3. Test the local action in a simple workflow
 
 * Go to Action tab
 
