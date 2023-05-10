@@ -43,16 +43,16 @@ createRepository(repoOwner, repoName, repoVisibility);
 ```shell
 npm install @actions/core
 
-export INPUT_REPO_OWNER=ndupoiron-ops
+export INPUT_REPO_OWNER=dupoiron-ops
 export INPUT_REPO_NAME=repo03
 export INPUT_REPO_VISIBILITY=public
 export INPUT_TOKEN=$REPO_OPS_TOKEN
 
 node index.js
 
-::set-output name=repo_full_name::ndupoiron-ops/repo03
-::set-output name=repo_url::https://github.com/ndupoiron-ops/repo03
-::set-output name=repo_id::638977153
+::set-output name=repo_full_name::dupoiron-ops/repo03
+::set-output name=repo_url::https://github.com/dupoiron-ops/repo03
+::set-output name=repo_id::639087573
 ```
 
 * Run job again to see what happens when the creation fails
@@ -116,13 +116,17 @@ runs:
 
 You can see that it is now possible to publish the action to the marketplace
 
+<img width="920" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/f6ecafaf-b965-49c1-a11d-44056ad88c2f">
+
 3. Test the local action in a simple workflow
 
 * Go to Action tab
 
-* Search for manual workflow and Configure it
+* Search for manual workflow and configure it
  
-* Rename the file create-repo-test-local.yml and paste the following content
+ <img width="315" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/e43aaf82-49e8-41be-b680-ccff2aa70b3f">
+
+* Rename the file `create-repo-test-local.yml` and paste the following content
 
 ```yaml
 name: Create Repository Test Workflow
@@ -133,7 +137,7 @@ on:
     inputs:
       repo_owner:
         description: Owner of the repository to be created
-        default: ndupoiron-ops
+        default: dupoiron-ops
         type: string
       
       repo_name:
@@ -151,6 +155,9 @@ jobs:
     runs-on: self-hosted
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v3.5.2
+
     - name: Create a repository
       uses: ./
       with:
@@ -158,10 +165,15 @@ jobs:
         repo_name: ${{ github.event.inputs.repo_name }}
         repo_visibility: ${{ github.event.inputs.repo_visibility }}
         token: ${{ secrets.REPO_OPS_TOKEN }}
+
 ```
 
 * Commit and push to main
 
 * Go to the Actions tab and run the workflow manually
+
+<img width="344" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/5ad73284-c947-482c-9f25-b897dfc7bc6c">
+
+The workflow has run and invoked the local action thanks to the following attribute: `uses: ./`
 
 A repository is created as indicated
