@@ -174,6 +174,7 @@ node dist/action.js
 repo_full_name dupoiron-ops/repo02
 repo_url https://github.com/dupoiron-ops/repo02
 repo_id 639065654
+```
 
 Once again, the repository is created successfully
 
