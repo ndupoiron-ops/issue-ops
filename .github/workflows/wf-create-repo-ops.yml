@@ -1,4 +1,4 @@
-name: Create Repository on Issue creation via inline scripts
+name: Create Repository on Issue creation
 
 on:
   issues:
