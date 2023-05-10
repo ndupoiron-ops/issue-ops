@@ -152,7 +152,7 @@ on:
 
 jobs:
   create_repo:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
