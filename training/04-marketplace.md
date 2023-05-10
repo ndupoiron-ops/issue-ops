@@ -66,4 +66,4 @@ The repository should be created as expected
 
 <img width="324" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/4bfef4cf-8a88-4cba-986e-747cd3e8efad">
 
-### [Next section: 05 - Issue Ops process](https://github.com/tdupoiron-org/issue-ops/main/training/05-issue-ops.md)
+### [Next section: 05 - Issue Ops process](https://github.com/tdupoiron-org/issue-ops/blob/main/training/05-issue-ops.md)
