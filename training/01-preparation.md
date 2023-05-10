@@ -52,8 +52,6 @@ It simply starts from a free account on GitHub.com.
 
 The workflow is triggered and the repository should be created.
 
-
-
 At the same time the issue is commented and closed.
  
- 
+### [Next section: 02 - Javascript App](https://github.com/tdupoiron-org/issue-ops/blob/main/training/02-javascript-app.md)
