@@ -55,7 +55,113 @@ node index.js
 ::set-output name=repo_id::638977153
 ```
 
- 
+* Run job again to see what happens when the creation fails
 
+```shell
 node index.js 
 ::error::Repository creation failed.
+```
+
+* Build app using webpack
+
+```shell
+npm run build
+```
+
+2. Creation Action definition
+
+* Creation an action.yml file at the root directory
+
+```yaml
+name: 'ndupoiron - Create a repository'
+description: 'Create a repository'
+
+branding:
+  icon: 'arrow-right-circle'
+  color: 'green'
+
+inputs:
+
+  repo_owner:
+    description: The name of the repository
+    required: true
+
+  repo_name:
+    description: The name of the repository
+    required: true
+
+  repo_visibility:
+    description: The visibility of the repository
+    required: false
+    default: public
+
+  token:
+    description: The access token used to authenticate to the GitHub API
+    required: true
+
+outputs:
+  repo_id:
+    description: The ID of the repository
+  repo_full_name:
+    description: The full name of the repository
+  repo_url:
+    description: The URL of the repository
+
+runs:
+  using: "node16"
+  main: "dist/action.js"
+```  
+
+* Push the code to the main branch
+
+You can see that it is now possible to publish the action to the marketplace
+
+3. Test the local action in a simple workflow
+
+* Go to Action tab
+
+* Search for manual workflow and Configure it
+ 
+* Rename the file create-repo-test.yml and paste the following content
+
+```yaml
+name: Create Repository Test Workflow
+
+on:
+  workflow_dispatch:
+    
+    inputs:
+      repo_owner:
+        description: Owner of the repository to be created
+        default: ndupoiron-ops
+        type: string
+      
+      repo_name:
+        description: Name of the repository to create
+        type: string
+        required: true
+        
+      repo_visibility:
+        description: can be public or private
+        type: string
+        default: public
+
+jobs:
+  create_repo:
+    runs-on: self-hosted
+
+    steps:
+    - name: Create a repository
+      uses: ./
+      with:
+        repo_owner: ${{ github.event.inputs.repo_owner }}
+        repo_name: ${{ github.event.inputs.repo_name }}
+        repo_visibility: ${{ github.event.inputs.repo_visibility }}
+        token: ${{ secrets.REPO_OPS_TOKEN }}
+```
+
+* Commit and push to main
+
+* Go to the Actions tab and run the workflow manually
+
+A repository is created as indicated
