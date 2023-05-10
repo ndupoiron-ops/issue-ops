@@ -20,8 +20,8 @@ It simply requires a free account on GitHub.com.
  
 * Navigate to your organization settings and create a secret in Codespaces and Actions:
  
- Secret name = REPO_OPS_TOKEN
- Secret value = <token>
+ - Secret name = REPO_OPS_TOKEN
+ - Secret value = < token >
 
 # 3 - Test the repo-ops process
 
@@ -37,5 +37,7 @@ It simply requires a free account on GitHub.com.
  
  <img width="346" alt="image" src="https://github.com/ndupoiron-ops/issue-ops/assets/123163496/af63f298-7bdd-4e37-baf6-221bdea78dfe">
 
-The workflow is triggered and the repository should be created. 
+The workflow is triggered and the repository should be created.
 At the same time the issue is commented and closed.
+ 
+ 
