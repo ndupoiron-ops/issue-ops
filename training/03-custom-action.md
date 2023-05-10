@@ -122,7 +122,7 @@ You can see that it is now possible to publish the action to the marketplace
 
 * Search for manual workflow and Configure it
  
-* Rename the file create-repo-test.yml and paste the following content
+* Rename the file create-repo-test-local.yml and paste the following content
 
 ```yaml
 name: Create Repository Test Workflow
