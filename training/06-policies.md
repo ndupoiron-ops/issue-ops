@@ -57,7 +57,7 @@ Note that it is also possible and even recommended to target an action by its co
         uses: dupoiron-ops/action-create-repo@a176e19e880d730a9524123650ceff65cb2c75e4
 ```
 
-## 4. End
+### End
 
 You have reached the end of this training.
 Please contact me if you have any question: tdupoiron@github.com
