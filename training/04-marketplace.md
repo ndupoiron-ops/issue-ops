@@ -61,3 +61,7 @@ jobs:
 * Run the workflow manually
 
 The repository should be created as expected
+
+<img width="516" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/9ea0e136-e7e4-49f4-86ab-d429a2782468">
+
+<img width="324" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/4bfef4cf-8a88-4cba-986e-747cd3e8efad">
