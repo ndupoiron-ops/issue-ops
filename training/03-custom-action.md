@@ -179,3 +179,5 @@ jobs:
 The workflow has run and invoked the local action thanks to the following attribute: `uses: ./`
 
 A repository is created as indicated
+
+### [Next section: 04 - Marketplace](https://github.com/tdupoiron-org/issue-ops/blob/main/training/04-marketplace.md)
