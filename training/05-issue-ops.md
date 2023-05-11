@@ -18,7 +18,7 @@ The workflow is now disabled
 
 ## 2. Create a new workflow
 
-* Create a copy of wf-create-repo-ops.yml file named wf-create-repo-ops-action.yml
+* Create a copy of `wf-create-repo-ops.yml` file named `wf-create-repo-ops-action.yml`
 
 * Change workflow name to `Create Repository on Issue creation via actions`
 
