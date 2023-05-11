@@ -34,6 +34,8 @@ It simply starts from a free account on GitHub.com.
   - Secret name = REPO_OPS_TOKEN
   - Secret value = < token >
 
+<img width="243" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/ef137496-cba9-4970-93b2-7078ead394b7">
+
 ## 3. Test the repo-ops process
 
 * Open the [issue-ops template repository](https://github.com/tdupoiron-org/issue-ops) and click on "Use this template" and create a new public repository
