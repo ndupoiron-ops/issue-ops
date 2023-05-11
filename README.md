@@ -16,7 +16,9 @@ This is why it is preferrable to combine them with actions. A custom action can 
 The documentation is [here](https://docs.github.com/en/actions/creating-actions/about-custom-actions)
 
 ## Use Case
-The objective is to build a IssueOps process to let developers create repositories from requests hosted in issues. This allows the DevSecOps teams to keep control on repository creation and policies enforcement.
+The objective is to build a IssueOps process to allow developers to create repositories from requests hosted in issues.
+
+This allows the DevSecOps teams to keep control on repository creation and policies enforcement.
 
 ## Start the training
 
