@@ -56,6 +56,12 @@ It simply starts from a free account on GitHub.com.
 
 The workflow is triggered and the repository should be created.
 
+<img width="401" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/a9b6a9b9-b294-4ce1-a616-88d9a25d4a1d">
+
 At the same time the issue is commented and closed.
- 
+
+<img width="493" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/57fba9ea-b9c9-4be5-acb4-a4adefb9c665">
+
+Your environment is ready, we can move on to section 2.
+
 ### [Next section: 02 - Javascript App](https://github.com/tdupoiron-org/issue-ops/blob/main/training/02-javascript-app.md)
