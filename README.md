@@ -3,7 +3,7 @@
 ## Introduction
 In the previous training we learned the basics of GitHub Actions by creating simple workflows. 
 
-We have also seen how to create reusable workflows.
+We also covered how to create reusable workflows.
 
 A reusable workflow starts independent runners where steps are executed.
 
