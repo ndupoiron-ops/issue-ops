@@ -27,7 +27,7 @@ It simply starts from a free account on GitHub.com.
 
  Save the token as it will be reused in the next step
  
-* Navigate to your organization settings and create a secret in Codespaces and Actions:
+* Navigate to your organization settings and create a secret in both Codespaces and Actions:
  
  <img width="313" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/aaaaa6f3-f1b3-4df7-9eaa-8acb4b84266a">
 
