@@ -4,7 +4,7 @@ In this chapter we will create a simple Javascript app to invoke GitHub Javascri
 
 ## 1. Initialize project
 
-* Create the `action-create-repo` public repository in the same organization
+* Create the `action-create-repo` public repository in the same organization and inititalize it with the default README file.
 
 <img width="537" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/e22f1510-ae8d-4363-8d1a-98db8f654c6f">
 
