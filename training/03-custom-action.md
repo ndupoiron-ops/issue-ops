@@ -74,7 +74,7 @@ npm run build
 
 ## 2. Creation Action definition
 
-* Creation an action.yml file at the root directory
+* Creation an `action.yml` file at the root directory
 
 ```yaml
 name: 'dupoiron - Create a repository'
