@@ -180,4 +180,6 @@ Once again, the repository is created successfully
 
 <img width="328" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/8d2d5257-88ed-4bb6-9f5b-cda769f2e12f">
 
+You have successfully created and tested a Javascript app to operate the creation of a repository. We can now translate this app into an Action.
+
 ### [Next section: 03 - Custom action](https://github.com/tdupoiron-org/issue-ops/blob/main/training/03-custom-action.md)
