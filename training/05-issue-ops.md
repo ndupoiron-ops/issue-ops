@@ -67,4 +67,6 @@ replaced by:
 
 The repository should be created and the issue commented and closed
 
+Now that you know how to use a public action in your workflow, let's have a quick look at the security best practices.
+
 ### [Next section: 06 - Security and Policies](https://github.com/tdupoiron-org/issue-ops/blob/main/training/06-policies.md)
