@@ -102,7 +102,7 @@ npm install --save-dev webpack-cli
 npm install node-polyfill-webpack-plugin
 ```
 
-*	Create webpack.config.js configuration file
+*	Create `webpack.config.js` configuration file
 
 ```javascript
 const path = require('path');
