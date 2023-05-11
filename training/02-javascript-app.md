@@ -1,6 +1,6 @@
 # Javascript application
 
-In this chapter we create a simple Javascript app to invoke GitHub Javascript SDK to create a repository.
+In this chapter we will create a simple Javascript app to invoke GitHub Javascript SDK to create a repository.
 
 ## 1. Initialize project
 
