@@ -55,6 +55,7 @@ node index.js
 ::set-output name=repo_full_name::dupoiron-ops/repo03
 ::set-output name=repo_url::https://github.com/dupoiron-ops/repo03
 ::set-output name=repo_id::639087573
+::set-output name=status::success
 ```
 
 * Run job again to see what happens when the creation fails
@@ -62,6 +63,7 @@ node index.js
 ```shell
 node index.js 
 ::error::Repository creation failed.
+::set-output name=status::failure
 ```
 
 * Build app using webpack
