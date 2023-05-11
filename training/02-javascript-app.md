@@ -28,7 +28,7 @@ version: (1.0.0)
 description: Create repository from issue
 ```
 
-* Add a .gitignore
+* Add a `.gitignore` file
 
 ```
 node_modules
