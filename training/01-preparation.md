@@ -1,7 +1,9 @@
+# Preparation
+
 This chapter is a preparation of the setup required to follow this training.
 It simply starts from a free account on GitHub.com.
 
-# 1 - Create a new organization
+## 1. Create a new organization
 
 * Sign in to github.com
 * Create a new free organization named $username-ops
@@ -13,7 +15,7 @@ It simply starts from a free account on GitHub.com.
  
  <img width="794" alt="image" src="https://github.com/tdupoiron-org/issue-ops/assets/7711190/54e5cb72-9994-49f9-9992-1dc9a13dd5c4">
 
-# 2 - Create a token and secret variables
+## 2. Create a token and secret variables
  
 * Navigate to your personal settings
 
@@ -32,7 +34,7 @@ It simply starts from a free account on GitHub.com.
   - Secret name = REPO_OPS_TOKEN
   - Secret value = < token >
 
-# 3 - Test the repo-ops process
+## 3. Test the repo-ops process
 
 * Open the [issue-ops template repository](https://github.com/tdupoiron-org/issue-ops) and click on "Use this template" and create a new public repository
  
