@@ -182,4 +182,6 @@ The workflow has run and invoked the local action thanks to the following attrib
 
 A repository is created as indicated
 
+Now that our action is ready, we can publish it to the Marketplace
+
 ### [Next section: 04 - Marketplace](https://github.com/tdupoiron-org/issue-ops/blob/main/training/04-marketplace.md)
