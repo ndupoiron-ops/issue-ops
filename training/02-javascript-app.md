@@ -38,7 +38,7 @@ node_modules
 
 ## 2. Design a script to create a repository
 
-* Create a index.js file with the following code
+* Create an `index.js` file with the following code
 
 ```javascript
 const { Octokit } = require("@octokit/rest");
